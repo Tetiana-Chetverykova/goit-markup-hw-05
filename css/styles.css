@@ -495,7 +495,6 @@ display: flex;
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   opacity: 0;
   visibility: hidden;
   background-color: rgba(46, 47, 66, 0.4);
@@ -540,8 +539,7 @@ display: flex;
   stroke: #000;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-close-btn:hover,
@@ -552,8 +550,8 @@ stroke: #ffffff;
   fill: #ffffff;
 }
 .modal-close-btn-icon { 
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
- }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* -------Form------ */
 .review-form-description {
   font-weight: 500;
@@ -566,7 +564,7 @@ stroke: #ffffff;
   text-align: center;
 }
 .review-form-field-wrapper {
- margin-bottom: 8px;
+margin-bottom: 16px;
 }
 .review-form-input-label {
   display: block;
